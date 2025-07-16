@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K.Lokesh - Full Stack Developer</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Dark Mode Toggle -->
+    <div class="dark-mode-toggle" id="darkModeToggle">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <!-- Animated Background Particles -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>K.Lokesh</h1>
+            <p class="hero-subtitle">Crafting innovative digital solutions with passion and precision</p>
+            <div class="hero-tags">
+                <span class="tag">Full Stack Developer</span>
+                <span class="tag">AI Enthusiast</span>
+                <span class="tag">Python Developer</span>
+                <span class="tag">SQL</span>
+            </div>
+        </div>
+        <div class="scroll-indicator" id="scrollDown">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M7 13l3 3 7-7"></path>
+                <path d="M7 6l3 3 7-7"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="about-content">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>I'm a passionate full-stack developer and an AI/ML enthusiasit with expertise in creating innovative digital solutions.</p>
+                        <p>My journey in tech will be like my love for problem-solving through coding. My only agneda is to deliver high-quality software solutions.</p>
+                        <div class="about-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Name:</span>
+                                <span class="detail-value">K Lokesh</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Email:</span>
+                                <span class="detail-value">itslokesh2905@gmail.com</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Experience:</span>
+                                <span class="detail-value">Fresher</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Location:</span>
+                                <span class="detail-value">Chennai, Tamilnadu</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <div class="image-wrapper floating-element" style="animation-delay: 0.8s">
+                            <div class="image-placeholder"><img src="C:\Users\lokes\OneDrive\Desktop\Portfolio\Passport.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="skills-title-container">
+            <h1 class="skills-title">Skills</h1>
+            <p class="skills-subtitle">Click to explore my technical expertise</p>
+        </div>
+        
+        <div class="skills-content">
+            <div class="carousel-container">
+                <div class="carousel" id="skillsCarousel">
+                    <div class="skill-card active" data-category="frontend">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <div class="skill-icon">💻</div>
+                                <h3>Frontend Development</h3>
+                            </div>
+                            <div class="card-back">
+                                <h3>Frontend Development</h3>
+                                <div class="skill-list">
+                                    <span class="skill-item">HTML5</span>
+                                    <span class="skill-item">CSS3</span>
+                                    <span class="skill-item">JavaScript</span>
+                                    <span class="skill-item">React</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card" data-category="backend">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <div class="skill-icon">⚙️</div>
+                                <h3>Backend Development</h3>
+                            </div>
+                            <div class="card-back">
+                                <h3>Backend Development</h3>
+                                <div class="skill-list">
+                                    <span class="skill-item">Python</span>
+                                    <span class="skill-item">Django</span>
+                                    <span class="skill-item">Node.js</span>
+                                    <span class="skill-item">Java</span>
+                                    <span class="skill-item">C</span>
+                                    <span class="skill-item">RESTful APIs</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card" data-category="database">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <div class="skill-icon">🗄️</div>
+                                <h3>Database & Storage</h3>
+                            </div>
+                            <div class="card-back">
+                                <h3>Database & Storage</h3>
+                                <div class="skill-list">
+                                    <span class="skill-item">SQL</span>
+                                    <span class="skill-item">MySQL</span>
+                                    <span class="skill-item">MongoDB</span>
+                                    <span class="skill-item">SQLite</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card" data-category="ai">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <div class="skill-icon">🤖</div>
+                                <h3>AI & Machine Learning</h3>
+                            </div>
+                            <div class="card-back">
+                                <h3>AI & Machine Learning</h3>
+                                <div class="skill-list">
+                                    <span class="skill-item">TensorFlow</span>
+                                    <span class="skill-item">PyTorch</span>
+                                    <span class="skill-item">Scikit-learn</span>
+                                    <span class="skill-item">Pandas</span>
+                                    <span class="skill-item">NumPy</span>
+                                    <span class="skill-item">OpenCV</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card" data-category="tools">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <div class="skill-icon">🛠️</div>
+                                <h3>Tools & Technologies</h3>
+                            </div>
+                            <div class="card-back">
+                                <h3>Tools & Technologies</h3>
+                                <div class="skill-list">
+                                    <span class="skill-item">Git</span>
+                                    <span class="skill-item">Linux</span>
+                                    <span class="skill-item">VS Code</span>
+                                    <span class="skill-item">Postman</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-nav prev" id="prevBtn">‹</button>
+                <button class="carousel-nav next" id="nextBtn">›</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="projects-title-container">
+            <h1 class="projects-title">Projects</h1>
+            <p class="projects-subtitle">Click to explore my work</p>
+        </div>
+        
+        <div class="projects-content">
+            <div class="projects-container">
+                <h2 class="section-title">My Projects</h2>
+                <div class="projects-grid">
+                    <!-- Portfolio Project -->
+                    <div class="project-card">
+                        <div class="project-card-inner">
+                            <div class="project-card-front">
+                                <div class="project-icon">🌐</div>
+                                <h3 class="project-title">My Portfolio</h3>
+                                <p class="project-description">Click to see details</p>
+                            </div>
+                            <div class="project-card-back">
+                                <h3 class="project-title">My Portfolio</h3>
+                                <p class="project-description">
+                                    A responsive personal portfolio website showcasing my skills, projects, 
+                                    and professional information with smooth animations and transitions.
+                                </p>
+                                <div class="project-tech">
+                                    <span class="tech-item">HTML5</span>
+                                    <span class="tech-item">CSS3</span>
+                                    <span class="tech-item">JavaScript</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fashion website -->
+                    <div class="project-card">
+                        <div class="project-card-inner">
+                            <div class="project-card-front">
+                                <div class="project-icon">🌐</div>
+                                <h3 class="project-title">E-Commerse</h3>
+                                <p class="project-description">Click to see details</p>
+                            </div>
+                            <div class="project-card-back">
+                                <h3 class="project-title">A Fashion Store</h3>
+                                <p class="project-description">
+                                    A responsive fashion website showcasing dresses
+                                    for men and women using local storage with smooth animations and transitions.
+                                </p>
+                                
+                                <div class="project-tech">
+                                    <span class="tech-item">HTML5</span>
+                                    <span class="tech-item">CSS3</span>
+                                    <span class="tech-item">JavaScript</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Medical AI Project -->
+                    <div class="project-card">
+                        <div class="project-card-inner">
+                            <div class="project-card-front">
+                                <div class="project-icon">🏥</div>
+                                <h3 class="project-title">Medical AI Assistant</h3>
+                                <p class="project-description">Click to see details</p>
+                            </div>
+                            <div class="project-card-back">
+                                <h3 class="project-title">Medical AI Assistant</h3>
+                                <p class="project-description">
+                                    An AI-powered medical assistant that helps diagnose common conditions 
+                                    based on symptoms and provides preliminary medical advice.
+                                </p>
+                                <div class="project-tech">
+                                    <span class="tech-item">Python</span>
+                                    <span class="tech-item">NLP</span>
+                                    <span class="tech-item">TensorFlow</span>
+                                    <span class="tech-item">Scikit-learn</span>
+                                    <span class="tech-item">HTML/CSS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Car Rental Project -->
+                    <div class="project-card">
+                        <div class="project-card-inner">
+                            <div class="project-card-front">
+                                <div class="project-icon">🚗</div>
+                                <h3 class="project-title">Car Rental System</h3>
+                                <p class="project-description">Click to see details</p>
+                            </div>
+                            <div class="project-card-back">
+                                <h3 class="project-title">Car Rental System</h3>
+                                <p class="project-description">
+                                    A full-stack car rental web application with vehicle inventory, 
+                                    booking system, user accounts, and payment processing.
+                                </p>
+                                <div class="project-tech">
+                                    <span class="tech-item">Java</span>
+                                    <span class="tech-item">SQL</span>
+                                    <span class="tech-item">HTML/CSS</span>
+                                    <span class="tech-item">JavaScript</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications-section">
+        <div class="certifications-container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certifications-grid">
+                <div class="certification-card floating-element">
+                    <div class="certification-icon">📜</div>
+                    <h3 class="certification-title">Image Processing with OpenCV using Python</h3>
+                    <p class="certification-issuer">Issued by Coursera</p>
+                    <p class="certification-date">Completed: May 2023</p>
+                    <a href="#" class="certification-link">View Certificate</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2 class="contact-title">Get In Touch</h2>
+                <p class="contact-text">
+                    Have a project in mind or want to discuss potential opportunities? 
+                    Feel free to reach out to me. I'm always open to new collaborations 
+                    and interesting conversations.
+                </p>
+                <div class="social-links">
+                    <a href="https://github.com/lokesh-292003" class="social-link" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/lokesh-k-781757372/" class="social-link" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:itslokesh2905@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="contact-form-container">
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" class="form-control" placeholder="Enter your message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                    <div id="formMessage" class="form-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
