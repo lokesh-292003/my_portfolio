@@ -607,21 +607,28 @@
         }
 
         .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            display: flex;
             gap: 30px;
             margin-top: 60px;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: stretch;
+            gap: 2rem;
+            padding: 1rem;
+            scroll-behavior: smooth;
+            scrollbar-width: thin;
         }
 
         .project-card {
             height: 400px;
-            perspective: 1000px;
+            width: 400px;
+            
             cursor: pointer;
         }
 
         .project-card-inner {
-            position: relative;
-            width: 100%;
+            position: flex;
+            width: 130%;
             height: 100%;
             transition: transform 0.6s;
             transform-style: preserve-3d;
@@ -681,19 +688,21 @@
             font-size: 1rem;
             line-height: 1.6;
             opacity: 0.9;
-            margin-bottom: 20px;
+            margin-bottom: 1px;
+            
         }
 
         .project-tech {
-            display: flex;
+            display: inline-flex;
             flex-wrap: wrap;
-            gap: 10px;
+            gap: 5px;
             margin-top: auto;
         }
 
         .tech-item {
             background: rgba(255, 255, 255, 0.15);
             padding: 8px 16px;
+            background: #333;
             border-radius: 20px;
             font-size: 0.9rem;
             font-weight: 500;
@@ -703,7 +712,7 @@
 
         .tech-item:hover {
             background: rgba(255, 255, 255, 0.25);
-            transform: translateY(-3px);
+            transform: translateY(-1px);
         }
 
         .project-card:hover {
@@ -721,7 +730,7 @@
             padding: 100px 20px;
             position: relative;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             justify-content: center;
             align-items: center;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -738,23 +747,33 @@
         }
 
         .certifications-grid {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 40px;
-            margin-top: 60px;
-        }
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+}
 
-        .certification-card {
-            width: 350px;
-            padding: 40px 30px;
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: 20px;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-            transition: all 0.3s ease;
-        }
+.certification-card {
+    flex: 0 0 auto;
+    width: 350px;
+    min-height: 250px;
+    padding: 1.5rem;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+
 
         .certification-card:hover {
             transform: translateY(-10px);
@@ -952,7 +971,7 @@
         }
 
         .form-message.error {
-            background: rgba(231, 76, 60, 0.2);
+         background: rgba(231, 76, 60, 0.2);
             border: 1px solid rgba(231, 76, 60, 0.3);
             display: block;
         }
@@ -961,11 +980,14 @@
             position: fixed;
             top: 0;
             left: 0;
+            bottom: 0;
             width: 100%;
             height: 100%;
             z-index: -1;
+            min-height: 100vh;
             overflow: hidden;
             pointer-events: none;
+            opacity: 0.2;
         }
 
         .particle {
@@ -975,7 +997,11 @@
             pointer-events: none;
             animation: float 15s infinite ease-in-out;
         }
-
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+}
         @media (max-width: 992px) {
             .about-grid {
                 grid-template-columns: 1fr;
@@ -1107,3 +1133,30 @@
                 font-size: 1.2rem;
             }
         }
+        @media (max-width: 768px) {
+            .card-container, .carousel {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card, .flip-card {
+                width: 90%;
+                height: auto;
+                margin: 1rem 0;
+            }
+
+            .carousel {
+                transform: none;
+                perspective: none;
+            }
+            }
+            * {
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: var(--accent);
+  color: white;
+}
+

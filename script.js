@@ -182,24 +182,20 @@
     });
 
     // Particles Background
-    const particlesEl = document.getElementById('particles');
-    const particleCount = window.innerWidth / 5;
-    
+    const particlesEl = document.querySelector(".particles");
+    const particleCount = Math.floor(window.innerWidth / 6);
+
     for (let i = 0; i < particleCount; i++) {
-        const particle = document.createElement('div');
-        particle.classList.add('particle');
-        particle.style.width = `${Math.random() * 5 + 1}px`;
-        particle.style.height = particle.style.width;
-        particle.style.backgroundColor = 'rgba(255, 255, 255, 0.5)';
-        particle.style.borderRadius = '50%';
+        const particle = document.createElement("div");
+        particle.classList.add("particle");
+        const size = Math.random() * 4 + 2;
+        particle.style.width = `${size}px`;
+        particle.style.height = `${size}px`;
         particle.style.top = `${Math.random() * 100}%`;
         particle.style.left = `${Math.random() * 100}%`;
-        particle.style.opacity = Math.random() * 0.5 + 0.1;
-        
-        const animationDuration = Math.random() * 20 + 10;
-        particle.style.animation = `float ${animationDuration}s infinite ease-in-out`;
+        particle.style.opacity = Math.random() * 0.4 + 0.2;
+        particle.style.animationDuration = `${Math.random() * 20 + 10}s`;
         particle.style.animationDelay = `${Math.random() * 20}s`;
-        
         particlesEl.appendChild(particle);
     }
 
